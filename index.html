@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			li{
+				list-style: none;
+			}
+			#imgList{
+				width: 100%;
+				margin: 0 auto;
+			}
+			#imgList ul{
+				position: relative;
+			}
+			#imgList li{
+				list-style: none;
+				border: 1px solid #999;
+				padding: 10px;
+				position: absolute;
+				left: 0;
+				top:0;
+				-webkit-transition: all 1s ;
+				transition: all 1s ;
+			}
+			#imgList li img{
+				width: 400px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="imgList">
+			<ul>
+				<li>
+					<img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3410514450,1252256605&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2377970140,3114883099&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2102531397,598045316&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2592656996,447854291&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=4222178553,2314269134&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=3077995107,2986171362&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=903764113,2479766590&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1384381548,3803421255&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=2136987269,675725460&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=813525554,643695799&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=3087275359,3599634105&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2966810225,4254023138&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1769656531,258498989&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=92026135,3556624782&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2839580908,3957861778&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3439956833,3497009882&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2099749455,1240332832&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=798537379,136241304&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2789994598,2348036200&fm=23&gp=0.jpg"/>
+				</li>
+				<li>
+					<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2806865485,4146437266&fm=23&gp=0.jpg"/>
+				</li>
+			</ul>
+		</div>
+	</body>
+		<script type="text/javascript">
+			
+			function getArr(min_height,cloum_heightArr){
+				for (var j=0;j<cloum_heightArr.length;j++) {
+					if (min_height==cloum_heightArr[j]) {
+						return j;
+					}
+				}
+				return 0;
+			}
+			window.onload = function(){
+				//liObj
+				var liObj = $("#imgList ul li");
+				//liObj.length
+				var li_leng = liObj.length;
+				//window.width
+//				var win_width = document.documentElement.offsetWidth;
+				var win_width = document.getElementById("imgList").offsetWidth;
+				//li.width
+				var li_width = liObj[0].offsetWidth+10;
+				//一排图片个数
+				var cloumNumber = parseInt(win_width/li_width);
+				//ul.width
+				var ul_width = li_width*cloumNumber-10
+				//数组 存放 一行 数据
+				var cloum_heightArr = new Array();
+				//一行中高度最小的在哪一列
+				var min_height = 0;
+				//当前摆放在哪一列
+				var cloum_index = 0;
+				for (var i=0;i<li_leng;i++) {
+					if (i<cloumNumber) {
+						liObj.eq(i).css({left:li_width*i+'px',top:'0'});
+						cloum_heightArr[i] = liObj[i].offsetHeight+10;
+						$("#imgList ul").css({width:ul_width+'px',margin:'0 auto'});
+					}else{
+						min_height = Math.min.apply(null,cloum_heightArr);
+						cloum_index = getArr(min_height,cloum_heightArr);
+						liObj.eq(i).css({left:li_width*cloum_index+'px',top:min_height+'px'});
+						cloum_heightArr[cloum_index] += liObj[i].offsetHeight+10;
+					}
+				}
+			}
+		</script>
+</html>
